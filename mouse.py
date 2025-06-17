@@ -1,34 +1,4 @@
-# import pyautogui
-# import time
-# from datetime import datetime
 
-# # Adjust these to your desired hours (24-hour format)
-# START_HOUR = 9    # 9:00 AM
-# END_HOUR = 17     # 5:00 PM
-
-# def is_within_active_hours():
-#     now = datetime.now()
-#     return START_HOUR <= now.hour < END_HOUR
-
-# def move_mouse():
-#     pyautogui.move(30, 0)
-#     pyautogui.move(-30, 0)
-#     print("Mouse moved at", datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-
-# def run_mouse_mover():
-#     print(f"Mouse mover started. Active between {START_HOUR}:00 and {END_HOUR}:00. Press Ctrl+C to stop.")
-#     try:
-#         while True:
-#             if is_within_active_hours():
-#                 move_mouse()
-#             else:
-#                 print("Outside active hours. Waiting...")
-#             time.sleep(180)  # every 3 minutes
-#     except KeyboardInterrupt:
-#         print("Mouse mover stopped.")
-
-# if __name__ == "__main__":
-#     run_mouse_mover()
 import pyautogui
 import threading
 import time
